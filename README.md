@@ -1,4 +1,4 @@
-# Personal Stock Tracker
+# Stock_Tracking_app
 
 React TypeScript + Bootstrap frontend with a TypeScript/Node backend, Finnhub WebSocket updates, Socket.IO UI updates, and JSON-backed app state.
 
@@ -22,4 +22,3 @@ npm run dev
 ```
 
 Open http://localhost:5173.
-# Stock_Tracking_app

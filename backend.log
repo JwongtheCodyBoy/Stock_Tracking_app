@@ -1,0 +1,168 @@
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5050
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\wongj\Documents\Stock_Tracking_app\backend\StockTracker.Api
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5050/api/stocks - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: GET /api/stocks'
+info: Microsoft.AspNetCore.Http.Result.OkObjectResult[1]
+      Setting HTTP status code 200.
+info: Microsoft.AspNetCore.Http.Result.OkObjectResult[3]
+      Writing value of type 'List`1' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: GET /api/stocks'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost:5050/api/stocks - 200 - application/json;+charset=utf-8 25.4008ms
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5050/api/stocks - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: GET /api/stocks'
+info: Microsoft.AspNetCore.Http.Result.OkObjectResult[1]
+      Setting HTTP status code 200.
+info: Microsoft.AspNetCore.Http.Result.OkObjectResult[3]
+      Writing value of type 'List`1' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: GET /api/stocks'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost:5050/api/stocks - 200 - application/json;+charset=utf-8 1.0167ms
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5050/api/stocks - - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: GET /api/stocks'
+info: Microsoft.AspNetCore.Http.Result.OkObjectResult[1]
+      Setting HTTP status code 200.
+info: Microsoft.AspNetCore.Http.Result.OkObjectResult[3]
+      Writing value of type 'List`1' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: GET /api/stocks'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost:5050/api/stocks - 200 - application/json;+charset=utf-8 3.3908ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://localhost:5050/hubs/stocks/negotiate?negotiateVersion=1 - - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://localhost:5050/hubs/stocks/negotiate?negotiateVersion=1 - - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://localhost:5050/hubs/stocks/negotiate?negotiateVersion=1 - 204 - - 0.6603ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://localhost:5050/hubs/stocks/negotiate?negotiateVersion=1 - 204 - - 0.4129ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5050/api/stocks - - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'HTTP: GET /api/stocks'
+info: Microsoft.AspNetCore.Http.Result.OkObjectResult[1]
+      Setting HTTP status code 200.
+info: Microsoft.AspNetCore.Http.Result.OkObjectResult[3]
+      Writing value of type 'List`1' as Json.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'HTTP: GET /api/stocks'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost:5050/api/stocks - 200 - application/json;+charset=utf-8 0.3049ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:5050/hubs/stocks/negotiate?negotiateVersion=1 - - 0
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:5050/hubs/stocks/negotiate?negotiateVersion=1 - - 0
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint '/hubs/stocks/negotiate'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint '/hubs/stocks/negotiate'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint '/hubs/stocks/negotiate'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint '/hubs/stocks/negotiate'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost:5050/hubs/stocks/negotiate?negotiateVersion=1 - 200 316 application/json 6.2322ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost:5050/hubs/stocks/negotiate?negotiateVersion=1 - 200 316 application/json 6.1682ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5050/hubs/stocks?id=2M2GYbcJCQD9solZ4uNqyg - - -
+info: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint '/hubs/stocks'
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.
+warn: StockTracker.Api.Services.FinnhubWebSocketService[0]
+      Finnhub API key is missing. Set Finnhub:ApiKey using user secrets.

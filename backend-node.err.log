@@ -1,0 +1,22 @@
+Finnhub API key is missing. Set FINNHUB_API_KEY in backend/stock-tracker-api/.env.
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::5050
+    at Server.setupListenHandle [as _listen2] (node:net:1898:16)
+    at listenInCluster (node:net:1946:12)
+    at Server.listen (node:net:2044:7)
+    at <anonymous> (C:\Users\wongj\Documents\Stock_Tracking_app\backend\stock-tracker-api\src\server.ts:77:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1925:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5050
+}
+
+Node.js v20.15.1
+Finnhub API key is missing. Set FINNHUB_API_KEY in backend/stock-tracker-api/.env.
