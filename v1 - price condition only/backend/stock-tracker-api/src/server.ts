@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import express from "express";
 import { createServer } from "node:http";
 import { Server } from "socket.io";
+import { FinnhubQuoteService } from "./finnhubQuoteService.js";
 import { FinnhubWebSocketService } from "./finnhubWebSocketService.js";
 import { JsonStateStore } from "./stateStore.js";
 import { StockManager } from "./stockManager.js";
@@ -40,6 +41,7 @@ const stateStore = new JsonStateStore(stateFilePath);
 const symbolValidator = new SymbolValidator(process.env.FINNHUB_API_KEY);
 const stockManager = new StockManager(stateStore, symbolValidator);
 await stockManager.initialize();
+const quoteService = new FinnhubQuoteService(process.env.FINNHUB_API_KEY, stockManager);
 
 stockManager.on("stocksUpdated", (stocks) => {
   io.emit("stocksUpdated", stocks);
@@ -55,7 +57,10 @@ app.get("/api/stocks", (_request, response) => {
 
 app.post("/api/stocks", async (request, response) => {
   try {
-    const stocks = await stockManager.addStock(request.body as AddStockRequest);
+    const requestBody = request.body as AddStockRequest;
+    const symbol = String(requestBody.symbol ?? "").trim().split(/\s+/)[0]?.toUpperCase() ?? "";
+    const initialQuote = await quoteService.getQuote(symbol);
+    const stocks = await stockManager.addStock(requestBody, initialQuote);
     response.json(stocks);
   } catch (error) {
     response.status(400).json({
@@ -76,6 +81,7 @@ const finnhubService = new FinnhubWebSocketService(
 
 httpServer.listen(port, () => {
   console.log(`Stock tracker API listening on http://localhost:${port}`);
+  quoteService.startPeriodicRefresh();
   finnhubService.start();
 });
 
@@ -83,6 +89,7 @@ process.on("SIGINT", shutdown);
 process.on("SIGTERM", shutdown);
 
 function shutdown(): void {
+  quoteService.stop();
   finnhubService.stop();
   httpServer.close(() => {
     process.exit(0);

@@ -7,7 +7,6 @@ React TypeScript + Bootstrap frontend with a TypeScript/Node backend, Finnhub We
 ```bash
 cd backend/stock-tracker-api
 npm install
-copy .env.example .env
 npm run dev
 ```
 

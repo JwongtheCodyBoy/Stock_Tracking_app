@@ -1,0 +1,10 @@
+
+> stock-tracker-api@0.1.0 dev
+> tsx watch src/server.ts
+
+Stock tracker API listening on http://localhost:5050
+Connecting to Finnhub WebSocket...
+Connected to Finnhub WebSocket.
+Subscribed to AAPL
+Subscribed to NVDA
+Subscribed to SPCX

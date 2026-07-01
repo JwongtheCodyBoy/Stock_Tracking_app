@@ -3,6 +3,12 @@ import type { AddStockRequest, AppState, ConditionType, StockStatus, TrackedStoc
 import { JsonStateStore } from "./stateStore.js";
 import { SymbolValidator } from "./symbolValidator.js";
 
+export interface StockQuote {
+  price: number;
+  previousClose: number | null;
+  timestampMs: number;
+}
+
 interface StockManagerEvents {
   stocksUpdated: [TrackedStock[]];
 }
@@ -50,7 +56,7 @@ export class StockManager extends EventEmitter {
     return [...new Set(this.state.stocks.map((stock) => stock.symbol))];
   }
 
-  async addStock(request: AddStockRequest): Promise<TrackedStock[]> {
+  async addStock(request: AddStockRequest, initialQuote?: StockQuote): Promise<TrackedStock[]> {
     const symbol = normalizeSymbol(request.symbol);
 
     if (!symbol) {
@@ -75,7 +81,7 @@ export class StockManager extends EventEmitter {
 
     await this.symbolValidator.validate(symbol);
 
-    this.state.stocks.push({
+    const stock: TrackedStock = {
       symbol,
       targetPrice: request.targetPrice,
       condition: request.condition,
@@ -84,10 +90,37 @@ export class StockManager extends EventEmitter {
       status: "NoPrice",
       addedAtUtc: new Date().toISOString(),
       lastUpdatedUtc: null
-    });
+    };
+
+    if (initialQuote) {
+      stock.currentPrice = initialQuote.price;
+      stock.previousPrice = initialQuote.previousClose;
+      stock.lastUpdatedUtc = new Date(initialQuote.timestampMs).toISOString();
+      stock.status = evaluateStatus(stock);
+    }
+
+    this.state.stocks.push(stock);
 
     await this.saveAndBroadcast();
     return this.getStocks();
+  }
+
+  async updateFromQuote(symbol: string, quote: StockQuote): Promise<void> {
+    const normalizedSymbol = normalizeSymbol(symbol);
+    const stock = this.state.stocks.find(
+      (trackedStock) => trackedStock.symbol.toUpperCase() === normalizedSymbol
+    );
+
+    if (!stock) {
+      return;
+    }
+
+    stock.previousPrice = stock.currentPrice ?? quote.previousClose;
+    stock.currentPrice = quote.price;
+    stock.lastUpdatedUtc = new Date(quote.timestampMs).toISOString();
+    stock.status = evaluateStatus(stock);
+
+    await this.saveAndBroadcast();
   }
 
   async removeStock(symbol: string): Promise<TrackedStock[]> {

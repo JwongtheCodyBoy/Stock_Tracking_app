@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "darkMode": false
+  },
+  "stocks": [
+    {
+      "symbol": "AAPL",
+      "targetPrice": 2,
+      "condition": "GreaterThanOrEqual",
+      "currentPrice": 283.78,
+      "previousPrice": 283.78,
+      "status": "TargetMet",
+      "addedAtUtc": "2026-06-28T01:54:58.384Z",
+      "lastUpdatedUtc": "2026-06-26T20:00:00.000Z"
+    },
+    {
+      "symbol": "NVDA",
+      "targetPrice": 2,
+      "condition": "GreaterThanOrEqual",
+      "currentPrice": 192.53,
+      "previousPrice": 192.53,
+      "status": "TargetMet",
+      "addedAtUtc": "2026-06-28T01:56:13.468Z",
+      "lastUpdatedUtc": "2026-06-26T20:00:00.000Z"
+    },
+    {
+      "symbol": "SPCX",
+      "targetPrice": 180,
+      "condition": "GreaterThanOrEqual",
+      "currentPrice": 153.23,
+      "previousPrice": 153.23,
+      "status": "Waiting",
+      "addedAtUtc": "2026-06-28T02:01:57.826Z",
+      "lastUpdatedUtc": "2026-06-26T20:00:00.000Z"
+    }
+  ]
+}
