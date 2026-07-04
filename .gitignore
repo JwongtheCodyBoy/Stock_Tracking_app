@@ -7,4 +7,6 @@ dist/
 *.suo
 *.tmp
 .env
+.env.*
+!.env.example
 .DS_Store
